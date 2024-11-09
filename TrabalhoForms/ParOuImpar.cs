@@ -10,29 +10,26 @@ using System.Windows.Forms;
 
 namespace frmPrincipal
 {
-    public partial class Divisivel : Form
+    public partial class ParOuImpar : Form
     {
-        public Divisivel()
+        public ParOuImpar()
         {
             InitializeComponent();
         }
 
-        private void Divisivel_Load(object sender, EventArgs e)
+        private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            int num = Convert.ToInt32(txtValor1.Text);
+            int mostrar = Utilitarios.ParImpar(num);
+            
+            txtValor2.Text = mostrar.ToString();
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int num = Convert.ToInt32(txtNumero.Text);
-            bool Div = Utilitarios.Divisivel(num);
-            txtResposta.Text = Div.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            txtNumero.Text = "";
-            txtResposta.Text = "";
+            txtValor1.Text = "";
+            txtValor2.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)

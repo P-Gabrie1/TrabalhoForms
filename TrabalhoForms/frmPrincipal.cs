@@ -43,5 +43,53 @@ namespace TrabalhoForms
             objTela.MdiParent = this;
             objTela.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void parOuImparToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ParOuImpar objTela = new ParOuImpar();
+            objTela.MdiParent = this;
+            objTela.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void lblPrincipal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void indicativoIMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CalculoImc objTela = new CalculoImc();
+            objTela.MdiParent = this;
+            objTela.Show();
+        }
+
+        private void notasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Notas objTela = new Notas();
+            objTela.MdiParent = this;
+            objTela.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

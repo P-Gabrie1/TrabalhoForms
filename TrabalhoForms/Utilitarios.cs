@@ -17,7 +17,7 @@ namespace frmPrincipal
             return (horas, minutos, segundos);
 
         }
-               public static bool Divisivel(int num)
+        public static bool Divisivel(int num)
         {
             return (num % 3 == 0);
         }
@@ -36,8 +36,55 @@ namespace frmPrincipal
             return idade;
         }
 
+        public static int ParImpar(int num)
+        {
+            int cal;
+            if (num % 2 == 0)
+            {
+                cal = num * 2;
+                return cal;
+            }
+            else
+            {
+                cal = num / 2;
+                return cal;
+            }
+        }
+            public static double ValorImc(double peso, double altura) 
+            {
+            double cal;
+
+            cal = (altura * altura) / peso;
+            return cal;
+            }
+        public static int Notas(int num) 
+        {
+            if (num == 10) 
+            {
+                return num;
+            }
+            else if(num >= 8 && num <= 9.9) 
+            {
+                return num;
+            }
+            else if (num >= 7 && num <= 7.9)
+            {
+                return num;
+            }
+            else if (num >= 0 && num <= 6.6)
+            {
+                return num;
+            }
+            else 
+            {
+                return num;
+            }
+
+        }
+           
         }
     }
+
     
 
 

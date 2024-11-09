@@ -10,29 +10,26 @@ using System.Windows.Forms;
 
 namespace frmPrincipal
 {
-    public partial class Divisivel : Form
+    public partial class CalculoImc : Form
     {
-        public Divisivel()
+        public CalculoImc()
         {
             InitializeComponent();
         }
 
-        private void Divisivel_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            int num = Convert.ToInt32(txtNumero.Text);
-            bool Div = Utilitarios.Divisivel(num);
-            txtResposta.Text = Div.ToString();
+            double peso = Convert.ToDouble(txtValor1.Text);
+            double altura = Convert.ToDouble(txtValor2.Text);
+            double mostar = Utilitarios.ValorImc(peso, altura);
+            txtValor3.Text = mostar.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            txtNumero.Text = "";
-            txtResposta.Text = "";
+            txtValor1.Text = "";
+            txtValor2.Text = "";
+            txtValor3.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)

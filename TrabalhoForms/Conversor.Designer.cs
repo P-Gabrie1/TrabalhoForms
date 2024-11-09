@@ -46,7 +46,7 @@
             // 
             // btnConfirmar
             // 
-            btnConfirmar.Location = new Point(89, 134);
+            btnConfirmar.Location = new Point(65, 155);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.Size = new Size(94, 29);
             btnConfirmar.TabIndex = 0;
@@ -57,7 +57,7 @@
             // lblSegundos
             // 
             lblSegundos.AutoSize = true;
-            lblSegundos.Location = new Point(70, 71);
+            lblSegundos.Location = new Point(65, 109);
             lblSegundos.Name = "lblSegundos";
             lblSegundos.Size = new Size(135, 20);
             lblSegundos.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             // txtSegundo
             // 
-            txtSegundo.Location = new Point(222, 64);
+            txtSegundo.Location = new Point(217, 102);
             txtSegundo.Name = "txtSegundo";
             txtSegundo.Size = new Size(125, 27);
             txtSegundo.TabIndex = 2;
@@ -145,7 +145,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(207, 134);
+            button1.Location = new Point(178, 155);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 11;
@@ -155,7 +155,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(326, 134);
+            button2.Location = new Point(291, 155);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 12;

@@ -37,8 +37,13 @@ namespace TrabalhoForms
             mostrarIdadeToolStripMenuItem = new ToolStripMenuItem();
             valoresDeNumerosParesToolStripMenuItem = new ToolStripMenuItem();
             conversorDeTemperaturaToolStripMenuItem = new ToolStripMenuItem();
-            conversorToolStripMenuItem1 = new ToolStripMenuItem();
             parte2ToolStripMenuItem = new ToolStripMenuItem();
+            parOuImparToolStripMenuItem = new ToolStripMenuItem();
+            diferençaDeValoresToolStripMenuItem = new ToolStripMenuItem();
+            indicativoIMToolStripMenuItem = new ToolStripMenuItem();
+            notasToolStripMenuItem = new ToolStripMenuItem();
+            conversorToolStripMenuItem1 = new ToolStripMenuItem();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -99,6 +104,40 @@ namespace TrabalhoForms
             conversorDeTemperaturaToolStripMenuItem.Text = "Conversor de Temperatura";
             conversorDeTemperaturaToolStripMenuItem.Click += conversorDeTemperaturaToolStripMenuItem_Click;
             // 
+            // parte2ToolStripMenuItem
+            // 
+            parte2ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { parOuImparToolStripMenuItem, diferençaDeValoresToolStripMenuItem, indicativoIMToolStripMenuItem, notasToolStripMenuItem });
+            parte2ToolStripMenuItem.Name = "parte2ToolStripMenuItem";
+            parte2ToolStripMenuItem.Size = new Size(68, 24);
+            parte2ToolStripMenuItem.Text = "Parte 2";
+            // 
+            // parOuImparToolStripMenuItem
+            // 
+            parOuImparToolStripMenuItem.Name = "parOuImparToolStripMenuItem";
+            parOuImparToolStripMenuItem.Size = new Size(229, 26);
+            parOuImparToolStripMenuItem.Text = "Par ou Impar";
+            parOuImparToolStripMenuItem.Click += parOuImparToolStripMenuItem_Click;
+            // 
+            // diferençaDeValoresToolStripMenuItem
+            // 
+            diferençaDeValoresToolStripMenuItem.Name = "diferençaDeValoresToolStripMenuItem";
+            diferençaDeValoresToolStripMenuItem.Size = new Size(229, 26);
+            diferençaDeValoresToolStripMenuItem.Text = "Diferença de Valores";
+            // 
+            // indicativoIMToolStripMenuItem
+            // 
+            indicativoIMToolStripMenuItem.Name = "indicativoIMToolStripMenuItem";
+            indicativoIMToolStripMenuItem.Size = new Size(229, 26);
+            indicativoIMToolStripMenuItem.Text = "Indicativo IMC";
+            indicativoIMToolStripMenuItem.Click += indicativoIMToolStripMenuItem_Click;
+            // 
+            // notasToolStripMenuItem
+            // 
+            notasToolStripMenuItem.Name = "notasToolStripMenuItem";
+            notasToolStripMenuItem.Size = new Size(229, 26);
+            notasToolStripMenuItem.Text = "Notas";
+            notasToolStripMenuItem.Click += notasToolStripMenuItem_Click;
+            // 
             // conversorToolStripMenuItem1
             // 
             conversorToolStripMenuItem1.Name = "conversorToolStripMenuItem1";
@@ -106,22 +145,29 @@ namespace TrabalhoForms
             conversorToolStripMenuItem1.Text = "Conversor";
             conversorToolStripMenuItem1.Click += conversorToolStripMenuItem1_Click;
             // 
-            // parte2ToolStripMenuItem
+            // button1
             // 
-            parte2ToolStripMenuItem.Name = "parte2ToolStripMenuItem";
-            parte2ToolStripMenuItem.Size = new Size(68, 24);
-            parte2ToolStripMenuItem.Text = "Parte 2";
+            button1.BackColor = SystemColors.ControlDark;
+            button1.Location = new Point(612, 349);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 3;
+            button1.Text = "Sair";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "frmPrincipal";
             Text = "Principal";
+            Load += frmPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -145,5 +191,10 @@ namespace TrabalhoForms
         private ToolStripMenuItem valoresDeNumerosParesToolStripMenuItem;
         private ToolStripMenuItem conversorDeTemperaturaToolStripMenuItem;
         private ToolStripMenuItem parte2ToolStripMenuItem;
+        private ToolStripMenuItem parOuImparToolStripMenuItem;
+        private ToolStripMenuItem diferençaDeValoresToolStripMenuItem;
+        private ToolStripMenuItem indicativoIMToolStripMenuItem;
+        private ToolStripMenuItem notasToolStripMenuItem;
+        private Button button1;
     }
 }
